@@ -28,7 +28,7 @@ export const getUser = createAsyncThunk(
   `get-all-${prefix}`,
   async (fields: { email: string; idCard: string }, thunkAPI) => {
     try {
-      const params = `WC=zcfg_requester_id_passport='${fields?.idCard}' AND zcfg_requester_address_email='${fields?.email}' AND delete_flag='0'`;
+      const params = `WC=zcfg_requester_id_passport='${fields?.idCard}' AND zcfg_requester_address_email='${fields?.email}' AND delete_flag=0`;
       const headers = {
         'X-Obj-Attrs':
           'zfullname,zcfg_requester_address_email, zcfg_requester_id_passport,zcfg_requester_address,zcfg_requester_card_number,zcfg_requester_organization,zcfg_requester_phone_number,zcfg_requester_postion,zapprover',

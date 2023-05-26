@@ -15,5 +15,6 @@ const App = () => {
     </ErrorBoundary>
   );
 };
+/*final*/
 
 export default App;
